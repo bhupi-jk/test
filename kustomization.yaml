@@ -1,2 +1,4 @@
 resources:
   - test-deployment.yaml
+  - services.yaml
+  
