@@ -5,6 +5,7 @@ metadata:
 spec:
   selector:
     app: service_test_pod
+  type: LoadBalancer
   ports:
   - port: 80
     targetPort: http
