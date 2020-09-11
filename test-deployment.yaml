@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: service-test
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: service_test_pod
