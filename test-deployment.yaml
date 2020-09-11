@@ -3,7 +3,7 @@ apiVersion: apps/v1
 metadata:
   name: service-test
 spec:
-  replicas: 4
+  replicas: 5
   selector:
     matchLabels:
       app: service_test_pod
@@ -17,7 +17,7 @@ spec:
         image: python:2.7
         imagePullPolicy: IfNotPresent
         command: ["/bin/bash"]
-        args: ["-c", "echo \"<p>V6: Hello from $(hostname)</p>\" > index.html; python -m SimpleHTTPServer 8080"]
+        args: ["-c", "echo \"<p>V7: Hello from $(hostname)</p>\" > index.html; python -m SimpleHTTPServer 8080"]
         ports:
         - name: http
           containerPort: 8080
